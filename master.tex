@@ -46,6 +46,7 @@ openright]{book}
 %for nice tables
 \usepackage{multirow}
 %\usepackage{booktabs}
+\usepackage{tikz}
 \usepackage{ctable}
 
 %for nice item lists
@@ -118,27 +119,25 @@ openright]{book}
 \includeonly{
 	title,
 	abstract,
-	abstract_de,
 	acknowledgments,
 	paper-collaborators,
 	eid,
 	chapter-1_introduction,
 	chapter-2_related_work,
-	chapter-3_testbed,
-	chapter-4_measurement_tools,
-	chapter-5_algorithm,
-	chapter-6_conclusion,
+	chapter-3_measurement_tools,
+	chapter-4_analyse_optimization,
+	chapter-5_conclusion,
 %	appendix,
 }
 
 
-% BEGINN of COCUMENT
+% BEGINN of DOCUMENT
 \begin{document}
 
 \setlength{\headheight}{13.6pt}
 
 %TITLE PAGE
-\pagestyle{empty}
+
 \include{title}
 
 \selectlanguage{USenglish}
@@ -148,10 +147,6 @@ openright]{book}
 \setcounter{page}{1}
 \include{abstract}
 
-%ABSTRACT_DE
-\begin{otherlanguage*}{german}
-  \include{abstract_de}
-\end{otherlanguage*}
 
 %ACKNOWLAGEMENTS
 \include{acknowledgments}
@@ -162,8 +157,8 @@ openright]{book}
 %EIDESSTATTLICHE ERKLAERUNG
 \include{eid}
 
-%INSERT EMPTY PAGE
-\blankpage
+% %INSERT EMPTY PAGE
+% \blankpage
 
 %TOC PAGE
 \tableofcontents
@@ -173,17 +168,17 @@ openright]{book}
 %\pagestyle{headings}
 \include{chapter-1_introduction}
 \include{chapter-2_related_work}
-\include{chapter-3_testbed}
-\include{chapter-4_measurement_tools}
-\include{chapter-5_algorithm}
-\include{chapter-6_conclusion}
+\include{chapter-3_measurement_tools}
+\include{chapter-4_analyse_optimization}
+\include{chapter-5_conclusion}
 
 %BIBLIOGRAPHY
 \addcontentsline{toc}{chapter}{Bibliography}
 \bibliographystyle{IEEEtran}
 \fancyhead[RE]{\normalfont Bibliography}
 \fancyhead[LO]{\normalfont Bibliography}
-\bibliography{bibliography/IEEEabrv,bibliography/example}
+\bibliography{bibliography/IEEEabrv,bibliography/sample.bib}
+
 
 %ABBILDUNGSVERZEICHNIS
 \addcontentsline{toc}{chapter}{List of Figures}
