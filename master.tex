@@ -26,7 +26,7 @@ openright]{book}
 %\usepackage{lmodern}
 %from Ruben \usepackage[T1]{fontenc}
 \usepackage{times}
-%\usepackage[scaled]{helvet}
+%\usepackage[scaled]{helvet}https://www.overleaf.com/project/633c022130834f721b09716d
 %\usepackage[sc]{mathpazo} % math fonts for Palatino, see
                           % http://www.tug.dk/FontCatalogue/palatino/
 %\usepackage{palatino}
@@ -47,8 +47,8 @@ openright]{book}
 \usepackage{multirow}
 %\usepackage{booktabs}
 \usepackage{tikz}
-\usepackage{ctable}
-
+% \usepackage{ctable}
+% \usepackage[transparency]{xcolor} % Enable transparency support
 %for nice item lists
 \usepackage{paralist}
 
@@ -65,6 +65,9 @@ openright]{book}
 \usepackage{subfigure}
 
 \usepackage[right]{eurosym}
+\usepackage{pdflscape}
+% svg
+\usepackage{svg}
 
 
 %annotate TODO stuff
@@ -73,7 +76,14 @@ openright]{book}
 
 %pseudocode package
 \usepackage{pseudocode}
+%add code
+\usepackage{listings}
+%add floating fig
+\usepackage{placeins}
 
+
+%add greek
+\usepackage{textalpha}
 %to insert some clickable links
 \usepackage{hyperref}
 \definecolor{darkblue}{rgb}{0,0,.5}
@@ -123,11 +133,10 @@ openright]{book}
 	paper-collaborators,
 	eid,
 	chapter-1_introduction,
-	chapter-2_related_work,
-	chapter-3_measurement_tools,
-	chapter-4_analyse_optimization,
-	chapter-5_conclusion,
-%	appendix,
+	chapter-2_measurement_tools,
+	chapter-3_analysis_and_optimization,
+	chapter-4_conclusion,
+	appendix,
 }
 
 
@@ -162,16 +171,14 @@ openright]{book}
 
 %TOC PAGE
 \tableofcontents
-
 %MAIN CONTENT
 \mainmatter \pagestyle{fancy}
 %\pagestyle{headings}
 \include{chapter-1_introduction}
-\include{chapter-2_related_work}
-\include{chapter-3_measurement_tools}
-\include{chapter-4_analyse_optimization}
-\include{chapter-5_conclusion}
-
+\include{chapter-2_measurement_tools}
+\include{chapter-3_analysis_and_optimization}
+\include{chapter-4_conclusion}
+\include{appendix}
 %BIBLIOGRAPHY
 \addcontentsline{toc}{chapter}{Bibliography}
 \bibliographystyle{IEEEtran}
@@ -188,11 +195,9 @@ openright]{book}
 \addcontentsline{toc}{chapter}{List of Tables}
 \listoftables
 
-%APPENDIX
-%\appendix
-%\include{appendix}
 
-\backmatter
+
+% \backmatter
 %\include{cv}
 
 \end{document}

@@ -1,0 +1,28 @@
+\chapter{Summary and Outlook}
+\label{chap:Summary and Outlook}
+
+\section{Summary}
+
+The thesis concludes with a comprehensive analysis of Minstrel-HT rate control algorithm. The three main chapters of the thesis are summarized to highlight the key findings and contributions.
+
+In the first chapter~\ref{chap:introduction}, the concepts of MCS Index and its significance in determining data rates based on channel conditions and supported WiFi standards are explored. The Minstrel-HT algorithm is introduced as an advanced rate control algorithm. In following sub sections The "Rate Group" definition in context of Minstrel-HT been unwrapped \ref{sec:intro:wifiratecontrol:Group creation}, and topics such as rate sampling, MRR chain, and rate statistical calculation are covered in the sub chapters.
+
+The second chapter~\ref{chap:Measurement Tools} focuses on the data collection setup and monitoring information format used in the analysis. It provides a detailed description of the experiment environment, including the diverse positions and orientations of connected devices. By analysing trace files~\cite{SNCX_internal_note} extracted from the Linux kernel, the chapter offers description of each trace line.
+
+In the third chapter (Chapter~\ref{chap:Analysis and Optimization}), a Python-based tool is presented as a means of analysing the collected data and generating analytical plots for quantitative analysis. These plots cover various aspects of network characteristics. Subchapter~\ref{sec:Analysis and Optimization:Implementation of an Analysis Tool} focuses on the calculation of retrieved values from the dataset and describes the importance of each plot for observation. In Subchapter~\ref{sec:Analysis and Optimization:Performance Evaluation}, additional plots are shown.
+
+Overall, the thesis provides a comprehensive analysis of WiFi data transmission, offering insights into modulation, coding schemes, and the performance of the Minstrel-HT rate control algorithm. The Python-based analytical tool and the generated plots contribute to a deeper understanding of the data transmission process, enabling the optimization of wireless network performance and the improvement of data transmission reliability.
+
+The findings presented in this thesis lay the foundation for further research and development in the field of wireless network optimization.
+
+\section{Future Directions}
+
+As the study concludes, there exists potential directions for future research and development in the field of wireless network optimization. These directions aim to enhance the understanding and application of wireless network optimization techniques. The following areas can be explored:
+
+\textbf{Improving the Analytic Tool:} One area for future exploration involves improving the analytical tool used in this study to better visualize and comprehend various aspects of data transmission. This could involve incorporating additional metrics, visual representations, interactive features and enhancing the dynamic capabilities of the Python tool to provide a better understanding of wireless network performance. One of the suggested metrics to observe~\ref{Overlap} is Overlap value.
+
+\textbf{Extending the Scope of Observations:} Expanding the application of the tool to observe and analyse a wider range of scenarios would be a valuable avenue for future research. By capturing diverse network configurations, traffic patterns, and environmental conditions, researchers can gain insights into the robustness and adaptability of optimization algorithms across different real-world settings.
+
+\textbf{Exploring Alternative Optimization Algorithms:} This study focused on a specific optimization algorithm; however, future research can investigate the performance of different algorithms and compare their effectiveness in improving transmission rates. This exploration can lead to a better understanding of algorithmic strengths and weaknesses, enabling the development of more efficient solutions for optimization.
+
+\textbf{Protecting Important Details:} As the analytical tool evolves, it is crucial to ensure that it does not sacrifice essential details that can influence transmission rates. Future research should aim to strike a balance between capturing relevant factors affecting network optimization while still providing a comprehensive overview. This could involve adjusting visualization techniques and data representation methods to maintain a high level of resolution without overwhelming users with too much information.
