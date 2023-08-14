@@ -1,17 +1,38 @@
-Latex template for all kind of theses at TU-Berlin 
+Master Thesis Elham Aref
 --------------------------------------------------
-(**D**iplom **A**rbeits **La**tex **Te**mplate)
 
-### [history]
-* based on Latex Makefile from [Chris Monson](http://www.bouncingchairs.net/oss) 2004 (shiblon@gmail.com)
+Abstract:  In IEEE 802.11 Wireless Local Area Networks (WLANs) a rate adaptation algorithm is employed
 
+as a frame transmission rate controller. The Rate controller algorithm Minstrel-HT was developed as
 
-### [usage]
-* clone the git tree to your local system where a standard latext evn ist required
-* just do a "make" to create the output file: master.pdf
-* to renew your complied pdf trigger a "make clean" to earase all potential outdated compiled file
-* to mofify, add or delete the document structure or esthetic, please edit the master.tex file as you need it
-* put all you bibtex library files into the subfolder ./bibliography/ & add them to master.tex as required
-* the Makefile originally from Chris Monson is extended by the feature to include R scripts that got compiled create a plot on the fly into the pdf (thx to N. Sarrar)
+the default rate adaptation in the Linux kernel for WiFi standards IEEE 802.11n and 802.11ac, which
 
-### [TODO]
+expanded upon the IEEE 802.11g standard Minstrel algorithm. Minstrel-HT performs by dynamically
+
+selecting data rates based on the current condition of the channel to increase throughput, achieve higher
+
+network performance and minimise packet loss [1].
+
+This thesis focuses on analyzing various aspects of network performance and the rate selections
+
+made by the Minstrel-HT algorithm. Through this analysis, we gain insights into better optimization
+
+strategies. As data transmission rates can vary in unsupervised scenarios compared to supervised ex-
+
+periments, understanding the decision-making process of the Minstrel-HT algorithm is essential. By
+
+examining different aspects of the channel environment, we can explore new directions for optimizing
+
+the channel.
+
+The thesis introduces a Python-based quantitative analysis tool that enables the examination of mon-
+
+itored data from the Linux kernel’s mac80211, providing a comprehensive view of the Minstrel-HT
+
+algorithm’s decision-making in various scenarios. By observing the results of data transmissions in de-
+
+tail and presenting different analytic plots, we can identify important details that influence transmission
+
+rates. This tool also facilitates the exploration of alternative optimization algorithms, allowing for a
+
+comparison of their effectiveness in improving transmission rates selection methods.
